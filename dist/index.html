@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/style.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <div class="flex justify-center align-middle items-center h-screen">
+        <!-- container -->
+        <div class="container w-auto p-20 border-solid border-2 border-slate-800 align-middle text-center  shadow-purple-500 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] rounded-lg"  >
+            <h1 class="title text-neutral-200 text-4xl p-5 font-medium">Password Generator</h1>
+            <input id="password" type="text " placeholder="Click on Generate Button" class="px-24 py-2  ">
+            <!-- buttons -->
+            <div class="buttons flex gap-4 justify-center p-3">
+                <button id="generate" class="generate text-neutral-200 bg-purple-600 p-2 font-medium px-10"> Generate</button>
+                <button id="copy" class="copy text-neutral-200 bg-purple-600 p-2 font-medium px-10"> Copy to Clipboard</button>
+            </div>
+            
+            <!-- password parameters -->
+            <div class=" parameters  p-3 flex-col text-slate-100 font-medium ">
+                <ul class="flex justify-between">
+                    <li>Password Length</li>
+                    <li><input type="number" name="" id="length" class="w-12 border-solid border-1 border-sky-100 bg-slate-500 text-white p-1"> </li>
+                </ul>
+                <ul class="flex justify-between">
+                    <li>Include uppercase Letters</li>
+                    <li><input type="checkbox" name="" id="uppercase"></li>
+                </ul>
+                <ul class="flex justify-between">
+                    <li>Include Lowercase Letters</li>
+                    <li><input type="checkbox" name="" id="lowercase"></li>
+                </ul>
+                <ul class="flex justify-between">
+                    <li>Include numbers</li>
+                    <li><input type="checkbox" name="" id="numbers"></li>
+                </ul>
+                <ul class="flex justify-between">
+                    <li>Include Symbols</li>
+                    <li><input type="checkbox" name="" id="symbols"></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
